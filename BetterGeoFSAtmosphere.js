@@ -1,3 +1,4 @@
+function redoAtmosphere() {
 //this doesn't work?
 var cloudsBoosted = new Boolean(0)
 setInterval(function(){
@@ -650,3 +651,4 @@ geofs.fx.atmosphere.destroy();
    setTimeout(() => {
 geofs.fx.atmosphere.create(geofs.api.renderingSettings.advancedAtmosphere, geofs.api.renderingSettings.scatteringQuality, geofs.api.renderingSettings.volumetricClouds, !geofs.preferences.weather.manual);
    },1000)
+}
