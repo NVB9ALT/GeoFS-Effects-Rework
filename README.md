@@ -1,3 +1,6 @@
-# GeoFS-Effects-
+# GeoFS-Effects-Rework
 
-This addon adds a minor atmosphere rework to make it brighter and also adds city lights independent from the water effects.
+This addon adds
+- City lights independent of water effect
+- Brighter atmosphere
+- Wingtip vortex condensation
