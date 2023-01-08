@@ -71,7 +71,7 @@ geofs.VCONarray.forEach(function(c, d){
 })
 }
 
-function updateVCondensation() {
+updateVCondensation = function() {
    if (geofs.cons == true && (geofs.animation.values.aoa > 10 || geofs.animation.values.loadFactor > 4) && geofs.aircraft.instance.definition.mass > 10000 && condensing != 1) {
 geofs.fx.vcondensationEmitterLeft = new geofs.fx.ParticleEmitter({
 				anchor: geofs.aircraft.instance.definition.parts[geofs.bodyID].collisionPoints[geofs.tipIndexL],
@@ -83,7 +83,7 @@ geofs.fx.vcondensationEmitterLeft = new geofs.fx.ParticleEmitter({
             endScale: .0015,
             randomizeStartScale: 0.00001,
             randomizeEndScale: .0001,
-            startOpacity: 0.9,
+            startOpacity: 0.5,
             endOpacity: 0.0001,
             startRotation: "random",
             texture: "whitesmoke"
@@ -98,7 +98,7 @@ geofs.fx.vcondensationEmitterRight = new geofs.fx.ParticleEmitter({
             endScale: .0015,
             randomizeStartScale: 0.00001,
             randomizeEndScale: .0001,
-            startOpacity: 0.9,
+            startOpacity: 0.5,
             endOpacity: 0.0001,
             startRotation: "random",
             texture: "whitesmoke"
